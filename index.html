@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/image/logo.svg">
+  <title>طود للتسويق</title>
+  <!-- <script src="assets/js/jquery-for-count.min.js"></script> -->
+  <!-- <script>
+    jQuery(document).ready(function ($) {
+      $('.counter').counterUp({
+        delay: 10,
+        time: 2000
+      });
+    });
+  </script> -->
+</head>
+<script>
+let header = document.querySelector("header .head");
+let end = document.querySelectorAll(".end");
+
+window.onscroll = function () {
+			if (scrollY >= 250) {
+			header.classList.add("header-fixed");
+		} else {
+			header.classList.remove("header-fixed");
+		}
+	end.forEach((ele , ind)=>{
+		if (scrollY >= 250) {
+			ele.classList.add("d-block");
+		} else {
+			ele.classList.remove("d-block");
+		}
+	});
+};
+</script>
+<body style="overflow-x: hidden !important; ">
+  <div
+    class="loaderlodging bg-white position-fixed w-100 bg-white d-flex flex-column align-items-center justify-content-center overflow-hidden">
+    <img class="img-fluid img-lg-h150 mb-4" src="assets/image/logo.svg" alt="erorr">
+    <div class="d-flex justify-content-center text-center">
+      <span class="loader"></span>
+    </div>
+  </div>
+  <!-- start header  -->
+  <header>
+    <div class="head">
+      <div class="container ">
+        <div
+          class="row d-flex align-items-center justify-content-lg-center justify-content-md-center justify-content-sm-between  w-md-100">
+          <div class="col col-lg-4 col-md-6 col-sm-6 logo  ">
+            <a href="index.html">
+              <img src="assets/image/logo.svg" alt="">
+            </a>
+          </div>
+          <div class=" col col-bars d-lg-none col-md-6 col-sm-6 ">
+            <button class="bars border-0 bg-transparent">
+              <i class=" fa-solid fa-bars"></i>
+            </button>
+          </div>
+          <div class="phone  col-lg-8 col-md-8 col-sm-12  w-100  ">
+            <div class="phone-slide row ">
+              <div class="head-phone col-lg-12 d-flex align-items-center justify-content-between">
+                <div class="logo">
+                  <img src="assets/image/logo.svg" alt="">
+                </div>
+                <div>
+                  <button class="closes border-0 bg-transparent">
+                    <i class="fa-solid fa-close"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="col list-links col-lg-10 ">
+                <div class="links">
+                  <ul>
+                    <li><a href="logo">الرئيسية</a></li>
+                    <li><a href="#">من نحن</a></li>
+                    <li><a href="#">خدماتنا</a></li>
+                    <li><a href="#">المقالات</a></li>
+                    <li><a href="#">تواصل معنا</a></li>
+
+                  </ul>
+                </div>
+                <div class="buttons-header">
+                  <div class="acoutn-btn dropdown">
+                    <button type="button" class=" border-0 bg-transparent dropdown-toggle" data-toggle="dropdown">
+                      <p>EN</p>
+                      <i class="fa-solid fa-globe text-primary"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">
+                        <p>AR</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="btns-header">
+                    <button class="btn btn-primary text-nowrap rounded-pill"> تواصل معنا</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- end header  -->
+  <!-- ////////////////////////////////// -->
+  <!-- start landing  -->
+  <section class="landing ">
+    <div class="bg-landing bg ">
+      <img src="assets/image/bg-top-landing.svg" alt="">
+    </div>
+    <div class="container">
+      <div
+        class="row row-cols-lg-2 row-cols-md-1 row-cols-sm-1 flex-lg-row flex-md-column-reverse flex-sm-column-reverse ">
+        <div class="col text-center text-lg-start text-md-start text-sm-center" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
+          <h3>نبذة عن طود للتسويق</h3>
+          <h1 class="text-primary">أكبر شركة سيو في المملكة</h1>
+          <p>هذا النينصب تركيزهم على مساعدة العملاء في سرد قصصهم من خلال العلامات التجارية والتصميم، وهم يؤمنون بقوة
+            القصص في التواصل مع الجماهير على مستوى أعمق، وإلهامهم، وبناء الولاء. يؤكدون على اتباع نهج تعاوني، حيث يعملون
+            عن كثب مع رواد الأعمال والفرق الذين لديهم رؤية واضحة ودوافع لتحقيق تأثير إيجابي.</p>
+          <div>
+            <button class="btn btn-secondary ">المزيد عن طود للتسويق</button>
+          </div>
+        </div>
+        <div class="col " data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
+          <img src="assets/image/image-landing.png" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end landing  -->
+  <!-- /////////////////////////////////////////////////// -->
+ 
+  <!-- ////////////////////////////////////////////////////// -->
+  <!-- start services  -->
+  <section class="services mt-5 py5" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
+    <div class="container">
+      <div class="title row text-center">
+        <p>خدماتنا</p>
+        <h2 class="text-secondary">خدمات طود للتسويق</h2>
+      </div>
+      <div class="autoplay2">
+        <div class="card ">
+          <img src="assets/image/ico-serv-1.svg" alt="" class="img-fluid mb-4">
+          <h5>تسويق محتوى</h5>
+          <p>هذا نص تجريبي لاختبار شكل و حجم النصوص و طريقة عرضها في هذا المكان و حجم و لون الخط حيث يتم التحكم في هذا
+            النص.</p>
+          <a href="">اِقراء المزيد <i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+        <div class="card ">
+          <img src="assets/image/ico-serv-2.svg" alt="" class="img-fluid mb-4">
+          <h5>تسويق سوشيال ميديا</h5>
+          <p>هذا نص تجريبي لاختبار شكل و حجم النصوص و طريقة عرضها في هذا المكان و حجم و لون الخط حيث يتم التحكم في هذا
+            النص.</p>
+          <a href="">اِقراء المزيد <i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+        <div class="card ">
+          <img src="assets/image/ico-serv-3.svg" alt="" class="img-fluid mb-4">
+          <h5>تسويق منتجات</h5>
+          <p>هذا نص تجريبي لاختبار شكل و حجم النصوص و طريقة عرضها في هذا المكان و حجم و لون الخط حيث يتم التحكم في هذا
+            النص.</p>
+          <a href="">اِقراء المزيد <i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+        <div class="card ">
+          <img src="assets/image/ico-serv-1.svg" alt="" class="img-fluid mb-4">
+          <h5>تسويق محتوى</h5>
+          <p>هذا نص تجريبي لاختبار شكل و حجم النصوص و طريقة عرضها في هذا المكان و حجم و لون الخط حيث يتم التحكمو حجم
+            النصوص و طريقة عرضها في هذا المكان و حجم و لون الخط حيث يتم التحكم في هذا النص.</p>
+          <a href="">اِقراء المزيد <i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+      </div>
+      <!-- <div class="text-center mt-60-px">
+        <a class="btn btn-secondary px-3 py-2 ">
+          المزيد عن خدماتنا 
+        </a>
+      </div> -->
+    </div>
+  </section>
+  <!-- end services  -->
+  <!-- ////////////////////////////////////////////////////// -->
+  <!-- start why-us  -->
+  <section class="who-us why-us py-5">
+    <div class="bg">
+      <img src="assets/image/bg-why-us.png" alt="">
+    </div>
+    <div class="container">
+      <div
+        class="row row-cols-lg-2 row-cols-md-1 row-cols-sm-1 flex-lg-row flex-md-column-reverse flex-sm-column-reverse ">
+        <div class="col text-center text-lg-start text-md-start text-sm-center" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
+          <p>من نحن</p>
+          <h2 class="text-primary "><span class="auto">لماذا تختار طود للتسويق</span><span class="typing">|</span></h2>
+          <div class="collapses">
+            <div class=" collaps  " data-toggle="collapse" data-target="#demo">
+              <div class="info-collaps">
+                ماذا يقدم لك طود من خدمات؟
+                <button class="blus-open-info ">
+                  <span class="change "><i class="fa-solid fa-angle-down"></i></span>
+                </button>
+              </div>
+              <p id="demo" class="collapse">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو
+                مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                المساحة هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن
+                يستبدل في نفس المساحة</p>
+            </div>
+            <div class=" collaps  " data-toggle="collapse" data-target="#demo1">
+              <div class="info-collaps">
+                كم تستغرق الحملة الاعلانية؟
+                <button class="blus-open-info ">
+                  <span class="change "><i class="fa-solid fa-angle-down"></i></span>
+                </button>
+              </div>
+              <p id="demo1" class="collapse">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو
+                مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                المساحة هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن
+                يستبدل في نفس المساحة</p>
+            </div>
+            <div class=" collaps  " data-toggle="collapse" data-target="#demo2">
+              <div class="info-collaps">
+                ما نوعية الشركات التى نخدمها ؟
+                <button class="blus-open-info ">
+                  <span class="change "><i class="fa-solid fa-angle-down"></i></span>
+                </button>
+              </div>
+              <p id="demo2" class="collapse">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو
+                مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                المساحة هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن
+                يستبدل في نفس المساحة</p>
+            </div>
+            <div class=" collaps  " data-toggle="collapse" data-target="#demo3">
+              <div class="info-collaps">
+                كيف نحصل على العملاء الجدد؟
+                <button class="blus-open-info ">
+                  <span class="change "><i class="fa-solid fa-angle-down"></i></span>
+                </button>
+              </div>
+              <p id="demo3" class="collapse">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو
+                مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                المساحة هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن
+                يستبدل في نفس المساحة</p>
+            </div>
+          </div>
+        </div>
+        <div class="col images " data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
+          <div class="img-back">
+            <img src="assets/image/back-why-us.png" alt="">
+          </div>
+          <div class="img-front">
+            <img src="assets/image/front-why-us.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end why-us  -->
+  <!-- //////////////////////////////////////////////////// -->
+  <!-- start review -->
+  <section class="clients my-5" data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">
+    <div class="container">
+      <div class="title ">
+        <p>ماذا يقول عملائنا</p>
+        <h2 class="text-primary">آراء عملائنا الكرام</h2>
+      </div>
+      <div class="autoplay2 py-5">
+        <div class="coment">
+          <div>
+            <ul class="stars">
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+            </ul>
+          </div>
+          <div>
+            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى</p>
+          </div>
+          <div class="person-client">
+            <div>
+              <img src="assets/image/ico-person-1.png" alt="">
+              <div class="d-flex flex-column align-items-start justify-content-start">
+                <h6>قاسم نور الدين</h6>
+                <p>@qasemnour</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="coment">
+          <div>
+            <ul class="stars">
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+            </ul>
+          </div>
+          <div>
+            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى</p>
+          </div>
+          <div class="person-client">
+            <div>
+              <img src="assets/image/ico-person-2.png" alt="">
+              <div class="d-flex flex-column align-items-start justify-content-start">
+                <h6>قاسم نور الدين</h6>
+                <p>@qasemnour</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="coment">
+          <div>
+            <ul class="stars">
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+            </ul>
+          </div>
+          <div>
+            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى</p>
+          </div>
+          <div class="person-client">
+            <div>
+              <img src="assets/image/ico-person-3.png" alt="">
+              <div class="d-flex flex-column align-items-start justify-content-start">
+                <h6>قاسم نور الدين</h6>
+                <p>@qasemnour</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="coment">
+          <div>
+            <ul class="stars">
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+            </ul>
+          </div>
+          <div>
+            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى</p>
+          </div>
+          <div class="person-client">
+            <div>
+              <img src="assets/image/ico-person-1.png" alt="">
+              <div class="d-flex flex-column align-items-start justify-content-start">
+                <h6>قاسم نور الدين</h6>
+                <p>@qasemnour</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- end review  -->
+  <!-- /////////////////////////////////////////////////// -->
+  <!-- start services  -->
+  <section class="services services-2 mt-5 py5" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
+    <div class="container">
+      <div class="title row text-center">
+        <p class="text-dark">خدماتنا</p>
+        <h2 class="text-primary">خدمات طود للتسويق</h2>
+      </div>
+      <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-2 charts_orb">
+        <div class="col">
+          <article class="orb">
+            <div class="orb_graphic">
+              <svg>
+                <circle class="fill"></circle>
+                <circle class="progress"></circle>
+              </svg>
+              <div class="orb_value count">76</div>
+            </div>
+            <div class="orb_label">
+              عملائنا الكرام
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="orb">
+            <div class="orb_graphic">
+              <svg>
+                <circle class="fill"></circle>
+                <circle class="progress"></circle>
+              </svg>
+              <div class="orb_value count">87</div>
+            </div>
+            <div class="orb_label">
+              نجاح محقق
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="orb">
+            <div class="orb_graphic">
+              <svg>
+                <circle class="fill"></circle>
+                <circle class="progress"></circle>
+              </svg>
+              <div class="orb_value count">50</div>
+            </div>
+            <div class="orb_label">
+              فريق عمل
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="orb">
+            <div class="orb_graphic">
+              <svg>
+                <circle class="fill"></circle>
+                <circle class="progress"></circle>
+              </svg>
+              <div class="orb_value count">76</div>
+            </div>
+            <div class="orb_label">
+              عملائنا الكرام
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end services  -->
+  <!-- //////////////////////////////////////////////// -->
+  <!-- ////////////////////////////////////////////////////// -->
+  <!-- start services  -->
+  <section class="services company mt-5 py-2" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
+    <div class="container">
+      <div class="title row text-center">
+        <p>شركاء طود</p>
+        <h2 class="text-secondary">شركاء النجاح</h2>
+      </div>
+      <section class="splide " dir="ltr">
+        <div class="splide__track">
+          <ul class="splide__list ">
+            <li class="splide__slide text-dark"><img src="assets/image/com-logo-1.svg"></li>
+            <li class="splide__slide text-dark"><img src="assets/image/com-logo-2.svg"></li>
+            <li class="splide__slide text-dark"><img src="assets/image/com-logo-3.svg"></li>
+            <li class="splide__slide text-dark"><img src="assets/image/com-logo-4.svg"></li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+  </section>
+  <!-- end services  -->
+  <!-- ////////////////////////////////////////////////////// -->
+  <!-- start footer  -->
+  <footer data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
+    <div class="container">
+      <div class="row  py-3">
+        <div class="col col-lg-3 col-md-6 col-sm-12 logo ">
+          <div><img src="assets/image/logo.svg" alt=""></div>
+          <div class="mt-4">
+            <p class="mb-4">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+              العربى،</p>
+          </div>
+        </div>
+        <div class="col col-lg-3 col-md-6 col-sm-12 ">
+          <h2 class="text-secondary">روابط سريعة</h2>
+          <ul>
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="#">من نحن</a></li>
+            <li><a href="#">خدماتنا</a></li>
+            <li><a href="#">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div class="col col-lg-3 col-md-6 col-sm-12 footer-new ">
+
+          <h2 class="text-secondary">تواصل معنا</h2>
+          <ul>
+            <li><a href="#">
+                <i class="fa-solid fa-location-dot  mr-2 mb-0-px"></i>
+                <p>مثال لعنوان يمكن استبدالة فيما بعد</p>
+              </a></li>
+            <li><a href="#">
+                <i class="fa-solid fa-phone  mr-2 mb-0-px"></i>
+                <p>+9966055936866</p>
+              </a></li>
+            <li><a href="#">
+                <i class="fa-solid fa-message  mr-2 mb-0-px"></i>
+                <p>safwa@info.com</p>
+              </a></li>
+          </ul>
+        </div>
+        <div class=" col col-lg-3 col-md-6 col-sm-12 search">
+          <h2 class="text-secondary">تواصل معنا</h2>
+          <div class="search-content">
+            <input type="search" name="" placeholder="ادخل بريدك الالكتروني" id="">
+            <button class="btn btn-primary rounded-pill px-4 py-2">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+          </div>
+          <h2 class="my-4">تابعنا</h2>
+          <ul class="social d-flex flex-row">
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-snapchat"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="end-footer ">
+
+      <p> جميع الحقوق محفوظة © 2024 لموقع <span class="text-secondary"> طود للتسويق </span> </p>
+    </div>
+  </footer>
+  <button class="end btn btn-primary rounded-50 position-fixed bottom-30px left-30px">
+    <i class="fa-solid fa-arrow-up font-5"></i>
+  </button>
+  <!-- end footer  -->
+  <script src="assets/js/jquery-for-count.min.js"></script>
+  <script src="assets/js/waypoints.min.js"></script>
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <script>
+    jQuery(document).ready(function ($) {
+      $('.counter').counterUp({
+        delay: 10,
+        time: 1500
+      });
+    });
+  </script>
+  <script src="assets/js/jquery-3.7.0.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script src="assets/js/autotyping.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/slick-animation.min.js"></script>
+  <script src="assets/js/@splidejs/splide.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/@splidejs/splide-extension-auto-scroll/dist/js/splide-extension-auto-scroll.min.js"></script>
+  <script src="assets/js/javascript.js"></script>
+
+  <script>
+    if (screen.width >= 768) {
+      const splide = new Splide('.splide', {
+        type: 'loop',
+        drag: 'free',
+        focus: 'center',
+        perPage: 4,
+        autoScroll: {
+          speed: 1,
+        },
+      });
+
+      splide.mount(window.splide.Extensions);
+    }
+    else if (screen.width <= 768) {
+      const splide = new Splide('.splide', {
+        type: 'loop',
+        drag: 'free',
+        focus: 'center',
+        perPage: 2,
+        autoScroll: {
+          speed: 1,
+        },
+      });
+
+      splide.mount(window.splide.Extensions);
+    }
+  </script>
+
+  <script>
+
+
+  </script>
+</body>
+
+</html>
